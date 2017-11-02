@@ -54,14 +54,46 @@
 		CC723FA91FAAC7E0002F8773 /* pixel-city */ = {
 			isa = PBXGroup;
 			children = (
+				CC723FBF1FAAC9B8002F8773 /* Utilities */,
+				CC723FBE1FAAC9AD002F8773 /* Extensions */,
+				CC723FBD1FAAC9A9002F8773 /* View */,
+				CC723FBC1FAAC99B002F8773 /* Controller */,
 				CC723FAA1FAAC7E0002F8773 /* AppDelegate.swift */,
-				CC723FAC1FAAC7E0002F8773 /* MapVC.swift */,
 				CC723FAE1FAAC7E0002F8773 /* Main.storyboard */,
 				CC723FB11FAAC7E0002F8773 /* Assets.xcassets */,
 				CC723FB31FAAC7E0002F8773 /* LaunchScreen.storyboard */,
 				CC723FB61FAAC7E0002F8773 /* Info.plist */,
 			);
 			path = "pixel-city";
+			sourceTree = "<group>";
+		};
+		CC723FBC1FAAC99B002F8773 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CC723FAC1FAAC7E0002F8773 /* MapVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CC723FBD1FAAC9A9002F8773 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CC723FBE1FAAC9AD002F8773 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CC723FBF1FAAC9B8002F8773 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
