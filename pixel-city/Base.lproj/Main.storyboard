@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cop-hU-dXS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="666"/>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hEZ-oJ-w5O">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
@@ -48,7 +48,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jM-of-kA8">
-                                <rect key="frame" x="305" y="597" width="50" height="50"/>
+                                <rect key="frame" x="305" y="596" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="g4V-Qd-By1"/>
                                     <constraint firstAttribute="height" constant="50" id="vLd-jw-Sgo"/>
@@ -59,30 +59,34 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nkx-do-w38">
-                                <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
+                                <rect key="frame" x="0.0" y="666" width="375" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="eG4-nc-MeS"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nkx-do-w38" secondAttribute="bottom" id="1Fd-Hh-6JA"/>
                             <constraint firstItem="cop-hU-dXS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2cP-4c-99V"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0jM-of-kA8" secondAttribute="trailing" constant="20" id="3AY-uj-Vkq"/>
-                            <constraint firstItem="cop-hU-dXS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="3zS-IW-b1j"/>
                             <constraint firstItem="cop-hU-dXS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5NK-5d-EpZ"/>
                             <constraint firstItem="hEZ-oJ-w5O" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CGw-CJ-PBR"/>
-                            <constraint firstItem="nkx-do-w38" firstAttribute="top" secondItem="cop-hU-dXS" secondAttribute="bottom" id="KQo-GU-6zX"/>
+                            <constraint firstItem="nkx-do-w38" firstAttribute="top" secondItem="cop-hU-dXS" secondAttribute="bottom" id="FJz-Rm-Fzm"/>
+                            <constraint firstItem="nkx-do-w38" firstAttribute="top" secondItem="0jM-of-kA8" secondAttribute="bottom" constant="20" id="UsR-FP-vC3"/>
                             <constraint firstItem="cop-hU-dXS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XFW-Zl-YQ5"/>
                             <constraint firstAttribute="trailing" secondItem="nkx-do-w38" secondAttribute="trailing" id="bPI-Td-2WE"/>
                             <constraint firstItem="hEZ-oJ-w5O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kFE-4h-CQA"/>
                             <constraint firstItem="hEZ-oJ-w5O" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="moH-XY-CQc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0jM-of-kA8" secondAttribute="bottom" constant="20" id="p3p-JO-BqV"/>
+                            <constraint firstAttribute="bottom" secondItem="nkx-do-w38" secondAttribute="bottom" id="x6v-i1-U84"/>
                             <constraint firstItem="nkx-do-w38" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="x70-08-4ea"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="cop-hU-dXS" id="cV5-q4-lMB"/>
+                        <outlet property="pullUpView" destination="nkx-do-w38" id="bYa-Lc-po8"/>
+                        <outlet property="pullUpViewHeightConstraint" destination="eG4-nc-MeS" id="BET-Sa-fm1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
