@@ -16,6 +16,7 @@
 		CC723FC11FACD6B5002F8773 /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC723FC01FACD6B5002F8773 /* DroppablePin.swift */; };
 		CC723FC31FAE4CB2002F8773 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC723FC21FAE4CB2002F8773 /* PhotoCell.swift */; };
 		CC723FC51FB0CBEB002F8773 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC723FC41FB0CBEB002F8773 /* Constants.swift */; };
+		CC723FC71FB0ED26002F8773 /* PopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC723FC61FB0ED26002F8773 /* PopVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		CC723FC01FACD6B5002F8773 /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
 		CC723FC21FAE4CB2002F8773 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		CC723FC41FB0CBEB002F8773 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CC723FC61FB0ED26002F8773 /* PopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopVC.swift; sourceTree = "<group>"; };
 		E6CDCBCB2D0B9D0912EA5A71 /* Pods_pixel_city.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pixel_city.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				CC723FAC1FAAC7E0002F8773 /* MapVC.swift */,
+				CC723FC61FB0ED26002F8773 /* PopVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC723FC71FB0ED26002F8773 /* PopVC.swift in Sources */,
 				CC723FC51FB0CBEB002F8773 /* Constants.swift in Sources */,
 				CC723FC31FAE4CB2002F8773 /* PhotoCell.swift in Sources */,
 				CC723FAD1FAAC7E0002F8773 /* MapVC.swift in Sources */,
